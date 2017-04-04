@@ -1,0 +1,212 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font: 16px/1em 'Source Sans Pro', sans-serif; }
+
+header {
+  background: #323332;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 10px;
+  text-align: center; }
+  header h1 {
+    font-size: 20px;
+    line-height: 1em; }
+  header a:link, header a:visited {
+    color: #D98C88;
+    text-decoration: none; }
+  header #list_switcher {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto 0; }
+    header #list_switcher li {
+      font-size: 14px;
+      line-height: 1em;
+      border: 1px solid #eee;
+      float: left;
+      padding: 4px 8px;
+      width: 50%;
+      text-align: center; }
+      header #list_switcher li:first-child {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px; }
+      header #list_switcher li:last-child {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px; }
+      header #list_switcher li:hover {
+        background: #aaa;
+        cursor: pointer; }
+      header #list_switcher li.active {
+        background: #eee;
+        color: #323332; }
+        header #list_switcher li.active:hover {
+          background: #eee;
+          cursor: default; }
+
+#map {
+  width: 100%;
+  height: 300px;
+  position: fixed;
+  z-index: 1; }
+  @media (min-width: 1000px) {
+    #map {
+      width: 50%; } }
+
+#listings {
+  width: 95%;
+  margin: 0 auto;
+  overflow: scroll; }
+  @media (min-width: 1000px) {
+    #listings {
+      width: 46%;
+      float: right;
+      margin-right: 2%; } }
+
+.about {
+  background: #eee;
+  padding: 10px;
+  margin-bottom: 10px;
+  line-height: 1.2em;
+  border-radius: 5px; }
+  .about a:link, .about a:visited {
+    color: #A86F6D; }
+
+.loading {
+  text-align: center; }
+
+footer {
+  margin-top: 30px;
+  background: #eee;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1em; }
+  footer a:link, footer a:visited {
+    color: #A86F6D; }
+
+.listing {
+  margin-bottom: 10px; }
+  .listing.loc_downtown .header {
+    background: #C0243C; }
+  .listing.loc_west_end .header {
+    background: #1C9E7A; }
+  .listing.loc_north_wilmington .header {
+    background: #CE6F1A; }
+  .listing .header {
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fff; }
+    .listing .header:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .listing .list_btn {
+    color: #fff;
+    float: right;
+    font-size: 35px;
+    margin-left: 10px; }
+    .listing .list_btn:hover {
+      opacity: 0.5;
+      cursor: pointer; }
+  .listing .location {
+    font-weight: bold; }
+  .listing .address {
+    font-size: 14px; }
+  .listing .body {
+    border: 1px solid #eee;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+    .listing .body:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .listing img {
+    width: 25%;
+    float: right;
+    margin-left: 5px;
+    margin-bottom: 5px; }
+  .listing .desc {
+    margin-bottom: 10px;
+    line-height: 1.2em; }
+  .listing .contact {
+    font-size: 14px; }
+    .listing .contact a:link, .listing .contact a:visited {
+      color: #000;
+      text-decoration: none; }
+    .listing .contact a:hover, .listing .contact a:active {
+      opacity: 0.5; }
+  .listing .features {
+    font-size: 14px;
+    margin-top: 5px; }
+    .listing .features:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .listing .features li {
+      float: left;
+      margin-right: 5px; }
+    .listing .features .location_area {
+      font-size: 0.8em;
+      text-transform: uppercase; }
+    .listing .features .text {
+      display: none; }
+
+.leaflet-popup-content {
+  font: 14px/1em 'Source Sans Pro', sans-serif; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Art Loop Wilmington Map</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta property="og:title" content="Art Loop Wilmington Map" />
+	<meta property="og:description" content="Plan your April 2017 Art Loop Wilmington tour with this interactive map." />
+	<meta property="og:image" content="http://s3.amazonaws.com/RCPersonal/wilm_artloop_april2017/cover.jpg" />
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@CityfestWilm" />
+	<meta name="twitter:title" content="Art Loop Wilmington Map" />
+	<meta name="twitter:description" content="Plan your April 2017 Art Loop Wilmington tour with this interactive map." />
+	<meta name="twitter:image" content="http://s3.amazonaws.com/RCPersonal/wilm_artloop_april2017/cover.jpg" />
+
+	<script src="https://use.fontawesome.com/abe5b38225.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+	<header>
+		<h1><a href="http://artloopwilm.org" target="_blank">Art Loop Wilmington</a></h1>
+		<p>
+			Friday, April 7, 2017 • 5 - 9 p.m.
+		</p>
+		<ul id="list_switcher">
+			<li id="list_switcher_all" class="active">All Exhibits</li>
+			<li id="list_switcher_saved">My Exhibits List (<span id="saved_listings_count">0</span>)</li>
+		</ul>
+	</header>		
+	
+	<div id="map"></div>
+
+	<div id="listings">
+		<div class="about" id="intro">
+			Plan your April 2017 <a href="http://artloopwilm.org" target="_blank">Art Loop Wilmington</a> tour with this interactive map. In the list below, click any exhibit's <i class="fa fa-plus-circle"></i> icon to add it to your saved list. (Or click the <i class="fa fa-minus-circle"></i> icon to remove it.) Once you're done, bookmark this page to save your list, or its URL to your friends so they can see your list, too.
+		</div>
+		<div class="about" id="no_saved_listings" style="display:none">
+			Looks like you haven't saved any exhibits yet. Go back to All Exhibits and click any listing's <i class="fa fa-plus-circle"></i> icon to save it here.
+		</div>
+		<div id="listings_inner">
+			
+		</div>
+		<div class="loading">
+			<i class="fa fa-cog fa-spin"></i> Loading…
+		</div>
+		<footer>
+			A project by <a href="http://ryancatalani.com" target="_blank">Ryan Catalani</a>.
+		</footer>
+
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script src="main.js"></script>
+
+</body>
+</html>
